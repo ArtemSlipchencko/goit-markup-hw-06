@@ -421,6 +421,7 @@
         </button>
         <h4 class="modal-form-title">Оставьте свои данные, мы вам перезвоним</h4>
         <form action="#" class="modal-form">
+          <div class="modal-form-container">
           
           <div class="modal-form-box">
           <label for="user-name">Имя</label>
@@ -437,17 +438,19 @@
           <input id="user-mail" type="email" class="modal-form-input" name="user-mail">
         </div>
 
-
+        <div class="modal-form-comment-container">
           <label for="user-comment">Комментарий</label>
-          <textarea id="user-comment" class="modal-form-comment" name="user-comment"></textarea>
+          <textarea id="user-comment" placeholder="Введите текст" class="modal-form-comment" name="user-comment"></textarea>
+        </div>
 
 
           <div class="modal-form-checkbox">
-          <input type="checkbox" id="user-policy" name="user-policy">
+          <input type="checkbox" id="user-policy" name="user-policy" class="visually-hidden checkbox">
           <label for="user-policy" class="modal-form-label-check">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
         </div>
 
           <button data-modal-close type="submit" class="modal-form-btn">Отправить</button>
+        </div>
         </form>
       </div>
     </div>
